@@ -19,8 +19,28 @@ treatments (blanching, plasma-activated water, ultrasound) causes standard model
 to fail on unseen batches.
 
 ![BISN Architecture](assets/bisn_architecture.png)
+**Figure 1. Architecture of the Batch-Invariant Spectral Network (BISN).**
+Raw NIR spectra *x* enter an informed preprocessing module consisting of a
+Savitzky–Golay-initialised learnable 1D convolution followed by instance
+normalisation, producing a batch-invariant representation *x̂*.
+This representation feeds into a sparse attentive encoder that generates a compact
+latent embedding *z* for insect species classification.
+Species logits are computed through a linear classifier and optimised via the species
+cross-entropy loss *L_y*.
+In parallel, *x̂* is passed through a gradient reversal layer (GRL) to a two-layer
+batch discriminator.
+The discriminator is trained to maximise the Shannon entropy loss *L_b* of its batch
+predictions, pushing the output distribution toward uniformity across batches.
+Reversed gradients from *L_b* flow back through the GRL and update the preprocessing
+parameters to remove batch-identifying features from *x̂*.
+The mask sparsity loss *L_s* is computed from the sparse attention mask and
+regularises both the encoder and the preprocessing module through the composite
+gradient update.
+Solid arrows denote the forward pass; dotted arrows indicate the backward gradient flow.
+The three-way interaction of *L_y*, *L_b*, and *L_s* implements a joint objective
+that preserves species-relevant biochemical information while suppressing
+batch-dependent variation.
 
-BISN achieves this through four jointly optimised components:
 
 1. **Informed Preprocessing Module** — a Savitzky-Golay-initialised learnable 1D
    convolution followed by per-spectrum instance normalisation, which suppresses
@@ -166,6 +186,11 @@ For each LOBO fold, the following files are saved to `--save_dir`:
 ## Results
 
 ![BISN Architecture](assets/bisn_representation.png)
+**Figure 2. BISN latent embedding visualisation across LOBO folds.**
+(a–c) PCA projections of the BISN embedding.
+(d–f) Cosine similarity matrices of mean BISN embeddings across insect species.
+AD: *A. domesticus*; HI: *H. illucens*; TM: *T. molitor*.
+Off-diagonal values reflect inter-species embedding similarity.
 
 | Model             | Acc (Raw)   | F1 (Raw)    | Acc (Preprocessed) | F1 (Preprocessed) |
 | ----------------- | ----------- | ----------- | ------------------ | ----------------- |
