@@ -163,7 +163,10 @@ For each LOBO fold, the following files are saved to `--save_dir`:
 - `BISN_history_LOBO_{batch}.csv` — per-epoch training history with columns:
   `epoch, val_acc, batch_acc, norm_entropy, composite_score, train_loss, val_loss`
 
-## Performance
+## Results
+
+![BISN Architecture](assets/bisn_architecture.png)
+
 | Model             | Acc (Raw)   | F1 (Raw)    | Acc (Preprocessed) | F1 (Preprocessed) |
 | ----------------- | ----------- | ----------- | ------------------ | ----------------- |
 | LDA               | 0.75 ± 0.09 | 0.75 ± 0.08 | 0.75 ± 0.08        | 0.74 ± 0.08       |
