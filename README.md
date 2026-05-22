@@ -154,6 +154,7 @@ Key hyperparameters are defined in `model_params` inside `main()`:
 
 ---
 
+
 ## Outputs
 
 For each LOBO fold, the following files are saved to `--save_dir`:
@@ -162,3 +163,20 @@ For each LOBO fold, the following files are saved to `--save_dir`:
 - `BISN_history_LOBO_{batch}.csv` — per-epoch training history with columns:
   `epoch, val_acc, batch_acc, norm_entropy, composite_score, train_loss, val_loss`
 
+## Performance
+| Model             | Acc (Raw)   | F1 (Raw)    | Acc (Preprocessed) | F1 (Preprocessed) |
+| ----------------- | ----------- | ----------- | ------------------ | ----------------- |
+| LDA               | 0.75 ± 0.09 | 0.75 ± 0.08 | 0.75 ± 0.08        | 0.74 ± 0.08       |
+| GPC               | 0.78 ± 0.12 | 0.78 ± 0.12 | 0.85 ± 0.06        | 0.85 ± 0.06       |
+| diPLS             | 0.67 ± 0.15 | 0.67 ± 0.15 | 0.77 ± 0.06        | 0.77 ± 0.06       |
+| PLSDA             | 0.71 ± 0.09 | 0.70 ± 0.09 | 0.74 ± 0.09        | 0.74 ± 0.09       |
+| PDS-PLSDA         | 0.71 ± 0.08 | 0.70 ± 0.08 | 0.77 ± 0.09        | 0.77 ± 0.09       |
+| ShapDA            | 0.69 ± 0.10 | 0.66 ± 0.10 | 0.77 ± 0.10        | 0.74 ± 0.11       |
+| SpectraTr         | 0.66 ± 0.14 | 0.64 ± 0.15 | 0.71 ± 0.04        | 0.69 ± 0.04       |
+| NIRCoreVision-MLP | 0.75 ± 0.08 | 0.73 ± 0.11 | 0.86 ± 0.05        | 0.86 ± 0.06       |
+| TabPFN            | 0.74 ± 0.10 | 0.73 ± 0.07 | 0.87 ± 0.08        | 0.86 ± 0.08       |
+| TabNet            | 0.75 ± 0.09 | 0.75 ± 0.09 | 0.88 ± 0.06        | 0.88 ± 0.06       |
+| *DANN*            | *0.81 ± 0.15* | 0.81 ± 0.15 | *0.89 ± 0.05*    | 0.89 ± 0.05       |
+| ----------------- | ----------- | ----------- | ------------------ | ----------------- |
+| *BISN*            | *0.93 ± 0.04* | 0.93 ± 0.04 | —                | —                 |
+------------------------------------------------------------------------------------------
