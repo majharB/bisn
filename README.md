@@ -34,8 +34,9 @@ BISN achieves this through four jointly optimised components:
    identity, driving the learned representation toward batch invariance.
 
 The joint training objective is:
+```
 L = L_y + λ(e) · L_b + β · L_s
-
+```
 
 where `L_y` is the species cross-entropy, `L_b` is the negative Shannon entropy
 of batch predictions, `L_s` is the TabNet sparsity regularisation, and `λ(e)` is
@@ -115,10 +116,10 @@ python src/main.py --mode raw --b_out 1 --device cuda:0 --save_dir ./trained_mod
 **Arguments:**
 
 | Argument | Default | Description |
-|---|---|---|
+|----|---|---|
 | `--mode` | `raw` | `raw`: use raw spectra with learnable preprocessing; `preprocessed`: apply external classical preprocessing first |
-| `--b_out` | `1` | Batch index to hold out (0-based integer) |
-| `--device` | `cuda:0` | Compute device (`cuda:0`, `cuda:1`, `cpu`) |
+| `--b_out`    | `1` | Batch index to hold out (0-based integer) |
+| `--device`   | `cuda:0` | Compute device (`cuda:0`, `cuda:1`, `cpu`) |
 | `--save_dir` | `./trained_model` | Output directory for model weights and training history |
 
 ### Full LOBO Cross-Validation
@@ -145,7 +146,7 @@ Key hyperparameters are defined in `model_params` inside `main()`:
 | `MAX_EPOCHS` | Maximum training epochs per fold |
 | `BATCH_SIZE` | Mini-batch size |
 | `LR` | Adam learning rate |
-| `LAMBDA_MAX` Maximum adversarial weight (annealed) |
+| `LAMBDA_MAX` |  Maximum adversarial weight (annealed) |
 | `BETA` | Sparsity regularisation weight (β in Eq. 1) |
 | `ALPHA` | Composite score weight: `α · val_acc + (1-α) · norm_entropy` |
 
