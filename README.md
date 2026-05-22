@@ -165,7 +165,7 @@ For each LOBO fold, the following files are saved to `--save_dir`:
 
 ## Results
 
-![BISN Architecture](assets/bisn_architecture.png)
+![BISN Architecture](assets/bisn_representation.png)
 
 | Model             | Acc (Raw)   | F1 (Raw)    | Acc (Preprocessed) | F1 (Preprocessed) |
 | ----------------- | ----------- | ----------- | ------------------ | ----------------- |
