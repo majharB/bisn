@@ -179,3 +179,24 @@ For each LOBO fold, the following files are saved to `--save_dir`:
 | **DANN**          |  **0.81 ± 0.15** | **0.81 ± 0.15** | **0.89 ± 0.05**    | **0.89 ± 0.05**       |
 | **BISN**           |**0.93 ± 0.04** | **0.93 ± 0.04** | —                | —                 |
 ------------------------------------------------------------------------------------------
+
+
+## Citation
+
+### BibTeX
+```bash
+@article{babor2025bisn,
+  title     = {Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication},
+  author    = {Babor, Majharulislam and Rossi, Giacomo and Altavilla, Annalisa
+               and Schl{\"u}ter, Oliver and H{\"o}hne, Marina M.-C.},
+  journal   = {-},
+  year      = {2026},
+  doi       = {10.XXXX/XXXXXXX}
+}
+```
+### APA 
+```bash
+Babor, M., Rossi, G., Altavilla, A., Schlüter, O., & Höhne, M. M.-C. (2026).
+Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication. 
+https://doi.org/10.XXXX/XXXXXXX
+```
