@@ -50,9 +50,8 @@ annealed from 0 to 1 using the DANN sigmoid schedule.
 - **Batches**: 3 independent production batches per species (purchased at 30–60 day intervals)
 - **Treatments**: T0 (tap water), T1 (blanching at 70°C), T2 (plasma-activated water)
 - **Ultrasound**: U0 (none), U1 (applied)
-- **Total spectra**: 2,700 (50 per factorial cell)
+- **Total spectra**: 2,700 (3 batches x 3 insects x 300 samples)
 - **Spectral range**: 700–2050 nm at 10 nm intervals (136 wavelength variables)
-- **Instrument**: PerkinElmer Lambda 950 UV-Vis/NIR, front-face reflectance mode
 
 The dataset is not publicly distributed. For access inquiries, contact the
 corresponding author.
@@ -131,7 +130,7 @@ To run all three folds, wrap the call in a shell loop:
 
 ```bash
 for fold in 0 1 2; do
-    python bisn.py --mode raw --b_out $fold --device cuda:0 --save_dir ./trained_model
+    python src/main.py --mode raw --b_out $fold --device cuda:0 --save_dir ./trained_model
 done
 ```
 
