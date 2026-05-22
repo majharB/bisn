@@ -90,9 +90,12 @@ bisn/
 ├── outputs/                # Preprocessing configs, BISN embeddings
 ├── results/                
 ├── src/                    # Core source code
-│   ├── dataloader.py       # Data ingestion and stream handling        
-│   ├── main.py             # BISN model architecture and training logic  
-│   └── preprocessing.py    # Spectral transformation and feature engineering
+│   ├── dataloader.py       # Data ingestion and stream handling   
+│   ├── grl.py              #  
+│   ├── informed_preproc.py # Component 1: informed preprocessing 
+│   ├── main.py             #  training logic       
+│   ├── model.py             # BISN model architecture 
+│   └── preprocessing.py    # Spectral transformation 
 ├── trained_model/          # Model checkpoints
 ├── README.md
 └── requirements.txt
