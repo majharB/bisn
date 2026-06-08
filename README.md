@@ -73,9 +73,6 @@ annealed from 0 to 1 using the DANN sigmoid schedule.
 - **Total spectra**: 2,700 (3 batches x 3 insects x 300 samples)
 - **Spectral range**: 700–2050 nm at 10 nm intervals (136 wavelength variables)
 
-The dataset is not publicly distributed. For access inquiries, contact the
-corresponding author.
-
 ---
 
 ## Requirements
