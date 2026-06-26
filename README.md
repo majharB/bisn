@@ -214,14 +214,19 @@ Off-diagonal values reflect inter-species embedding similarity.
   title     = {Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication},
   author    = {Babor, Majharulislam and Rossi, Giacomo and Altavilla, Annalisa
                and Schl{\"u}ter, Oliver and H{\"o}hne, Marina M.-C.},
-  journal   = {-},
+  journal   = {arXiv},
   year      = {2026},
-  doi       = {10.XXXX/XXXXXXX}
+  doi       = {10.48550/arXiv.2606.26757},
+  url       = {https://arxiv.org/abs/2606.26757}
 }
 ```
+------
+```bash
+\bibitem{babor2025bisn}
+Babor, M., Rossi, G., Altavilla, A., Schl\"{u}ter, O., \& H\"{o}hne, M. M.-C. (2026). Batch-invariant spectral intelligence for robust and explainable insect authentication. \textit{arXiv}. https://doi.org/10.48550/arXiv.2606.26757
+```
+
 ### APA 
 ```bash
-Babor, M., Rossi, G., Altavilla, A., Schlüter, O., & Höhne, M. M.-C. (2026).
-Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication. 
-https://doi.org/10.XXXX/XXXXXXX
+Babor, M., Rossi, G., Altavilla, A., Schlüter, O., & Höhne, M. M.-C. (2026). Batch-invariant spectral intelligence for robust and explainable insect authentication [Preprint]. arXiv. [https://doi.org/10.48550/arXiv.2606.26757](https://doi.org/10.48550/arXiv.2606.26757)
 ```
