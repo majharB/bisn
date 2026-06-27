@@ -1,6 +1,8 @@
 # BISN: Batch-Invariant Spectral Network
 
-**Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication**
+[**Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication**](https://arxiv.org/abs/2606.26757)
+
+Read Full Paper: [PDF](https://arxiv.org/pdf/2606.26757v1), [HTML](https://arxiv.org/html/2606.26757v1)
 
 > Majharulislam Babor, Giacomo Rossi, Annalisa Altavilla, Oliver Schlüter, Marina M.-C. Höhne;
 >
