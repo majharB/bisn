@@ -1,5 +1,5 @@
 
-## Dataset
+## Batch-invariant classification of edible insects using NIR 
 
 - **Species**: *Acheta domesticus*, *Hermetia illucens*, *Tenebrio molitor*
 - **Batches**: 3 independent production batches per species (purchased at 30–60 day intervals)
