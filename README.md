@@ -212,23 +212,27 @@ Off-diagonal values reflect inter-species embedding similarity.
 
 ### BibTeX
 ```bash
-@article{babor2025bisn,
-  title     = {Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication},
-  author    = {Babor, Majharulislam and Rossi, Giacomo and Altavilla, Annalisa
-               and Schl{\"u}ter, Oliver and H{\"o}hne, Marina M.-C.},
-  journal   = {arXiv},
-  year      = {2026},
-  doi       = {10.48550/arXiv.2606.26757},
-  url       = {https://arxiv.org/abs/2606.26757}
+@article{BABOR_2026_bisn,
+title = {Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication},
+journal = {Results in Engineering},
+pages = {114041},
+year = {2026},
+issn = {2590-1230},
+doi = {10.1016/j.rineng.2026.114041},
+url = {https://doi.org/10.1016/j.rineng.2026.114041},
+author = {Majharulislam Babor and Giacomo Rossi and Annalisa Altavilla and Oliver Schlüter and Marina M.-C. Höhne}
 }
 ```
 ------
 ```bash
-\bibitem{babor2025bisn}
-Babor, M., Rossi, G., Altavilla, A., Schl\"{u}ter, O., \& H\"{o}hne, M. M.-C. (2026). Batch-invariant spectral intelligence for robust and explainable insect authentication. \textit{arXiv}. https://doi.org/10.48550/arXiv.2606.26757
+\bibitem{BABOR_2026_bisn}
+M. Babor, G. Rossi, A. Altavilla, O. Schlüter, and M. M.-C. Höhne,
+Batch-Invariant Spectral Intelligence for Robust and Explainable Insect Authentication,
+\textit{Results in Engineering}, p. 114041, 2026.
+\url{https://doi.org/10.1016/j.rineng.2026.114041}.
 ```
 
 ### APA 
 ```bash
-Babor, M., Rossi, G., Altavilla, A., Schlüter, O., & Höhne, M. M.-C. (2026). Batch-invariant spectral intelligence for robust and explainable insect authentication [Preprint]. arXiv. [https://doi.org/10.48550/arXiv.2606.26757](https://doi.org/10.48550/arXiv.2606.26757)
+Babor, M., Rossi, G., Altavilla, A., Schlüter, O., & Höhne, M. M.-C. (2026). Batch-invariant spectral intelligence for robust and explainable insect authentication. Results in Engineering, 114041. https://doi.org/10.1016/j.rineng.2026.114041.
 ```
